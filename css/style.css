@@ -154,13 +154,6 @@ body {
 }
 
 .hide {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   visibility: hidden;
-}
-
-.wswe {
-  background-image: url("https://api.iconify.design/uil:music-tune-slash.svg?color=rgba(2%2C2%2C2%2C0.615)");
 }
 /*# sourceMappingURL=style.css.map */

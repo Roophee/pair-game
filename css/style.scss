@@ -43,7 +43,6 @@ body {
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(3, 1fr);
         justify-items:center;
-        // align-items:center;
         align-content: space-between;
         justify-content: space-between;
     }
@@ -116,10 +115,5 @@ body {
 }
 
 .hide {
-    appearance: none;
     visibility:hidden;
-}
-
-.wswe {
-    background-image: url('https://api.iconify.design/uil:music-tune-slash.svg?color=rgba(2%2C2%2C2%2C0.615)');
 }

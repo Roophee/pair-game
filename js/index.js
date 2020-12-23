@@ -155,7 +155,6 @@ document.addEventListener('click', function (e) {
 document.addEventListener('click', function(e) {
     if(e.target.classList.contains("mute")) {
         audioItem.volume = 0.4;
-        console.log(e)
         if(!audioItem.paused){
             e.target.classList.remove('wswe');
             audioItem.pause();
@@ -164,10 +163,4 @@ document.addEventListener('click', function(e) {
             audioItem.play();
         }
     }
-    console.log(indexInUse);
-    console.log("-----------");
-    console.log(imagesCountForTwo);
-    console.log("-----------");
-    console.log(prePair);
-    console.log("-----------");
 })
