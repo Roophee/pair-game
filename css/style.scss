@@ -33,9 +33,9 @@ body {
 
     &__card-place {
         position: relative;
-        width: 80%;
+        width: 90%;
         min-width: 600px;
-        height: 80%;
+        height: 90%;
         min-height: 600px;
         transition: 1s 0.5s;
 
@@ -67,10 +67,13 @@ body {
         position: relative;
         width: 9.5vw;
         height: 23vh;
+        min-width: 140px;
+        min-height: 170px;
     }
 }
 
-.audio__play {
+.audio {
+    &__play {
     position: absolute;
     width: 8vh;
     height: 8vh;
@@ -80,6 +83,11 @@ body {
     background-image: url("https://api.iconify.design/uil:volume.svg?color=rgba(2%2C2%2C2%2C0.615)");
     background-repeat: no-repeat;
     background-size: 50px;
+    }
+
+    &__pause {
+        background-image: url("https://api.iconify.design/uil:volume-mute.svg?color=rgba(2%2C2%2C2%2C0.615)");
+    }
 }
 
 .cards__front,
@@ -118,8 +126,4 @@ body {
 
 .hide {
     visibility: hidden;
-}
-
-.audio__pause {
-    background-image: url("https://api.iconify.design/uil:volume-mute.svg?color=rgba(2%2C2%2C2%2C0.615)");
 }
