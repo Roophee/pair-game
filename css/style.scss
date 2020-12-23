@@ -70,7 +70,7 @@ body {
     }
 }
 
-.audio__mute {
+.audio__play {
     position: absolute;
     width: 8vh;
     height: 8vh;
@@ -116,4 +116,8 @@ body {
 
 .hide {
     visibility:hidden;
+}
+
+.audio__pause {
+    background-image: url('https://api.iconify.design/uil:music-tune-slash.svg?color=rgba(2%2C2%2C2%2C0.615)');
 }

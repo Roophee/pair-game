@@ -153,13 +153,13 @@ document.addEventListener('click', function (e) {
 // MUTE AUDIO
 
 document.addEventListener('click', function(e) {
-    if(e.target.classList.contains("mute")) {
+    if(e.target.classList.contains("audio__play")) {
         audioItem.volume = 0.4;
         if(!audioItem.paused){
-            e.target.classList.remove('wswe');
+            e.target.classList.remove('audio__pause');
             audioItem.pause();
         } else {
-            e.target.classList.add('wswe');
+            e.target.classList.add('audio__pause');
             audioItem.play();
         }
     }
