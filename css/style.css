@@ -115,13 +115,13 @@ body {
   z-index: 5;
   right: 20px;
   top: 20px;
-  background-image: url("https://api.iconify.design/uil:volume.svg?color=rgba(2%2C2%2C2%2C0.615)");
+  background-image: url("https://api.iconify.design/uil:volume-mute.svg?color=rgba(2%2C2%2C2%2C0.615)");
   background-repeat: no-repeat;
   background-size: 50px;
 }
 
 .audio__pause {
-  background-image: url("https://api.iconify.design/uil:volume-mute.svg?color=rgba(2%2C2%2C2%2C0.615)");
+  background-image: url("https://api.iconify.design/uil:volume.svg?color=rgba(2%2C2%2C2%2C0.615)");
 }
 
 .cards__front,
