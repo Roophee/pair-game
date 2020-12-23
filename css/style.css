@@ -1,0 +1,166 @@
+body {
+  background: url(../img/wallpapers.jpg) no-repeat center center fixed;
+  background-size: cover;
+  min-width: 1000px;
+  min-height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.game {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80vw;
+  min-width: 850px;
+  height: 80vh;
+  min-height: 700px;
+  background-color: rgba(2, 2, 2, 0.315);
+  -webkit-transition: 1s .5s;
+  transition: 1s .5s;
+}
+
+.game__card-place {
+  position: relative;
+  width: 80%;
+  min-width: 600px;
+  height: 80%;
+  min-height: 600px;
+  -webkit-transition: 1s .5s;
+  transition: 1s .5s;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.game__card-holder {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  background-color: rgba(0, 0, 0, 0.027);
+  width: 9.5vw;
+  height: 23vh;
+  min-width: 140px;
+  min-height: 170px;
+}
+
+.game__card-holder.active .game__card {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.game__card {
+  visibility: inherit;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+  width: 9.5vw;
+  height: 23vh;
+}
+
+.audio__mute {
+  position: absolute;
+  width: 8vh;
+  height: 8vh;
+  z-index: 5;
+  right: 2vh;
+  top: 2vh;
+  background-image: url("https://api.iconify.design/uil:music-note.svg?color=rgba(2%2C2%2C2%2C0.615)");
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+
+.cards__front, .cards__back {
+  width: 9.5vw;
+  height: 23vh;
+  min-width: 140px;
+  min-height: 170px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  visibility: inherit;
+  top: 0;
+  left: 0;
+}
+
+.cards__front {
+  border: 2px solid black;
+  z-index: 2;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  border-radius: 5px;
+}
+
+.cards__back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.card__back, .card__front {
+  visibility: inherit;
+  width: 9.5vw;
+  height: 23vh;
+  min-width: 140px;
+  min-height: 170px;
+  border-radius: 5px;
+}
+
+.hide {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  visibility: hidden;
+}
+
+.wswe {
+  background-image: url("https://api.iconify.design/uil:music-tune-slash.svg?color=rgba(2%2C2%2C2%2C0.615)");
+}
+/*# sourceMappingURL=style.css.map */
