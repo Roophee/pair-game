@@ -143,11 +143,13 @@ let pairOrNot = function () {
 document.addEventListener('click', function (e) {
     if (e.target.parentElement.parentElement.className === "game__card") {
         let parent = e.target.parentElement.parentElement.parentElement;
+        if(prePair.length<2) {
         parent.classList.add("active");
         let cardNameHolder = e.target.parentElement.parentElement.parentElement.querySelector(".card__front").src.split("/");
         let cardName = cardNameHolder[cardNameHolder.length - 1].split(".")[0];
         prePair.push([cardName, parent, parent.value]);
         pairOrNot();
+        }
     }
 })
 

@@ -51,10 +51,10 @@ body {
     &__card-holder {
         perspective: 1000px;
         background-color: rgba(0, 0, 0, 0.027);
-        width: 14vw;
-        height: 17vh;
-        min-width: 140px;
-        min-height: 170px;
+        width: 10vw;
+        height: 14vw;
+        min-width: 145px;
+        min-height: 200px;
 
         &.active .game__card {
             transform: rotateY(180deg);
@@ -66,10 +66,10 @@ body {
         transition: 0.6s;
         transform-style: preserve-3d;
         position: relative;
-        width: 14vw;
-        height: 17vh;
-        min-width: 140px;
-        min-height: 170px;
+        width: 10vw;
+        height: 14vw;
+        min-width: 145px;
+        min-height: 200px;
     }
 }
 
@@ -93,10 +93,10 @@ body {
 
 .cards__front,
 .cards__back {
-    width: 14vw;
-    height: 17vh;
-    min-width: 140px;
-    min-height: 170px;
+    width: 10vw;
+    height: 14vw;
+    min-width: 145px;
+    min-height: 200px;
     backface-visibility: hidden;
     position: absolute;
     visibility: inherit;
@@ -118,10 +118,10 @@ body {
 .card__back,
 .card__front {
     visibility: inherit;
-    width: 14vw;
-    height: 17vh;
-    min-width: 140px;
-    min-height: 170px;
+    width: 10vw;
+    height: 14vw;
+    min-width: 145px;
+    min-height: 200px;
     border-radius: 5px;
 }
 
