@@ -106,7 +106,7 @@ const gameIsOver = function () {
                 addCardsOnPage();
             }
         }
-    }, 1600)
+    }, 2000)
 }
 
 // CHECK IS TWO CARDS PAIR OR NOT
@@ -137,6 +137,8 @@ let pairOrNot = function () {
     } else if (prePair.length < 2) {
     }
 }
+
+//  CLICK ON CARD EVENT
 
 document.addEventListener('click', function (e) {
     if (e.target.parentElement.parentElement.className === "game__card") {
