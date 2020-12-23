@@ -51,8 +51,8 @@ body {
     &__card-holder {
         perspective: 1000px;
         background-color: rgba(0, 0, 0, 0.027);
-        width: 9.5vw;
-        height: 15vh;
+        width: 14vw;
+        height: 17vh;
         min-width: 140px;
         min-height: 170px;
 
@@ -66,8 +66,8 @@ body {
         transition: 0.6s;
         transform-style: preserve-3d;
         position: relative;
-        width: 9.5vw;
-        height: 15vh;
+        width: 14vw;
+        height: 17vh;
         min-width: 140px;
         min-height: 170px;
     }
@@ -93,8 +93,8 @@ body {
 
 .cards__front,
 .cards__back {
-    width: 9.5vw;
-    height: 15vh;
+    width: 14vw;
+    height: 17vh;
     min-width: 140px;
     min-height: 170px;
     backface-visibility: hidden;
@@ -118,8 +118,8 @@ body {
 .card__back,
 .card__front {
     visibility: inherit;
-    width: 9.5vw;
-    height: 15vh;
+    width: 14vw;
+    height: 17vh;
     min-width: 140px;
     min-height: 170px;
     border-radius: 5px;
