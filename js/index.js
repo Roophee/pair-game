@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
     }, 500)
 })
 
-cardPlace.style.bottom = `${-window.outerHeight * 2}px`;
+cardPlace.style.bottom = `${-document.documentElement.clientHeight * 2}px`;
 document.addEventListener('DOMContentLoaded', function (e) {
     setTimeout(function () {
         cardPlace.style.bottom = '0px';
