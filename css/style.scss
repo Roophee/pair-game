@@ -1,6 +1,6 @@
 body {
     background: url(../img/wallpapers.jpg) no-repeat center center fixed;
-    background-size:cover;
+    background-size: cover;
     min-width: 1000px;
     min-height: 800px;
     display: flex;
@@ -29,7 +29,7 @@ body {
     height: 80vh;
     min-height: 700px;
     background-color: rgba(2, 2, 2, 0.315);
-    transition: 1s .5s;
+    transition: 1s 0.5s;
 
     &__card-place {
         position: relative;
@@ -37,12 +37,12 @@ body {
         min-width: 600px;
         height: 80%;
         min-height: 600px;
-        transition: 1s .5s;
+        transition: 1s 0.5s;
 
-        display:grid;
-        grid-template-columns: repeat(4,1fr);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        justify-items:center;
+        justify-items: center;
         align-content: space-between;
         justify-content: space-between;
     }
@@ -60,11 +60,11 @@ body {
         }
     }
 
-    &__card{
-        visibility:inherit;
+    &__card {
+        visibility: inherit;
         transition: 0.6s;
         transform-style: preserve-3d;
-        position:relative;
+        position: relative;
         width: 9.5vw;
         height: 23vh;
     }
@@ -75,23 +75,24 @@ body {
     width: 8vh;
     height: 8vh;
     z-index: 5;
-    right:2vh;
-    top:2vh;
-    background-image: url('https://api.iconify.design/uil:music-note.svg?color=rgba(2%2C2%2C2%2C0.615)');
+    right: 2vh;
+    top: 2vh;
+    background-image: url("https://api.iconify.design/uil:volume.svg?color=rgba(2%2C2%2C2%2C0.615)");
     background-repeat: no-repeat;
-    background-size:50px;
+    background-size: 50px;
 }
 
-.cards__front, .cards__back {
+.cards__front,
+.cards__back {
     width: 9.5vw;
     height: 23vh;
     min-width: 140px;
     min-height: 170px;
     backface-visibility: hidden;
-    position:absolute;
-    visibility:inherit;
-    top:0;
-    left:0;
+    position: absolute;
+    visibility: inherit;
+    top: 0;
+    left: 0;
 }
 
 .cards__front {
@@ -105,8 +106,9 @@ body {
     transform: rotateY(0deg);
 }
 
-.card__back, .card__front {
-    visibility:inherit;
+.card__back,
+.card__front {
+    visibility: inherit;
     width: 9.5vw;
     height: 23vh;
     min-width: 140px;
@@ -115,9 +117,9 @@ body {
 }
 
 .hide {
-    visibility:hidden;
+    visibility: hidden;
 }
 
 .audio__pause {
-    background-image: url('https://api.iconify.design/uil:music-tune-slash.svg?color=rgba(2%2C2%2C2%2C0.615)');
+    background-image: url("https://api.iconify.design/uil:volume-mute.svg?color=rgba(2%2C2%2C2%2C0.615)");
 }

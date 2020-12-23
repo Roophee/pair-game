@@ -54,8 +54,8 @@ body {
   height: 80vh;
   min-height: 700px;
   background-color: rgba(2, 2, 2, 0.315);
-  -webkit-transition: 1s .5s;
-  transition: 1s .5s;
+  -webkit-transition: 1s 0.5s;
+  transition: 1s 0.5s;
 }
 
 .game__card-place {
@@ -64,8 +64,8 @@ body {
   min-width: 600px;
   height: 80%;
   min-height: 600px;
-  -webkit-transition: 1s .5s;
-  transition: 1s .5s;
+  -webkit-transition: 1s 0.5s;
+  transition: 1s 0.5s;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -113,12 +113,13 @@ body {
   z-index: 5;
   right: 2vh;
   top: 2vh;
-  background-image: url("https://api.iconify.design/uil:music-note.svg?color=rgba(2%2C2%2C2%2C0.615)");
+  background-image: url("https://api.iconify.design/uil:volume.svg?color=rgba(2%2C2%2C2%2C0.615)");
   background-repeat: no-repeat;
   background-size: 50px;
 }
 
-.cards__front, .cards__back {
+.cards__front,
+.cards__back {
   width: 9.5vw;
   height: 23vh;
   min-width: 140px;
@@ -144,7 +145,8 @@ body {
           transform: rotateY(0deg);
 }
 
-.card__back, .card__front {
+.card__back,
+.card__front {
   visibility: inherit;
   width: 9.5vw;
   height: 23vh;
@@ -158,6 +160,6 @@ body {
 }
 
 .audio__pause {
-  background-image: url("https://api.iconify.design/uil:music-tune-slash.svg?color=rgba(2%2C2%2C2%2C0.615)");
+  background-image: url("https://api.iconify.design/uil:volume-mute.svg?color=rgba(2%2C2%2C2%2C0.615)");
 }
 /*# sourceMappingURL=style.css.map */
