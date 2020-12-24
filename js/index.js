@@ -79,7 +79,7 @@ let addCardsOnPage = function () {
                                     <img src="img/${heousArray[indexInUse[getRandomImage()]]}.jpg" alt="" value="${i}" class="card__front">
                                 </div>
                                 <div class="cards__back">
-                                    <img src="img/cardback.jpg" alt="" class="card__back">
+                                    <img src="img/cardback.jpg" alt="cardback" class="card__back">
                                 </div>
                             </div>`;
         cardPlace.appendChild(cardItem);

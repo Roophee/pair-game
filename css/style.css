@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   background: url(../img/wallpapers.jpg) no-repeat center center fixed;
   background-size: cover;
   min-width: 1000px;
@@ -13,7 +15,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow-x: hidden;
 }
 
 .container {
