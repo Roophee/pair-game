@@ -437,12 +437,12 @@ body {
   min-height: 200px;
 }
 
-.game__card-holder.active .game__card {
+.game__card-holder.active .game__card-item {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-.game__card {
+.game__card-item {
   visibility: inherit;
   -webkit-transition: 0.6s;
   transition: 0.6s;
@@ -455,24 +455,7 @@ body {
   min-height: 200px;
 }
 
-.audio__play {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  z-index: 5;
-  right: 15px;
-  top: 15px;
-  background-image: url("https://api.iconify.design/uil:volume-mute.svg?color=rgba(2%2C2%2C2%2C0.615)");
-  background-repeat: no-repeat;
-  background-size: 50px;
-}
-
-.audio__pause {
-  background-image: url("https://api.iconify.design/uil:volume.svg?color=rgba(2%2C2%2C2%2C0.615)");
-}
-
-.cards__front,
-.cards__back {
+.game__card-front, .game__card-back {
   width: 10vw;
   height: 14vw;
   min-width: 145px;
@@ -485,7 +468,7 @@ body {
   left: 0;
 }
 
-.cards__front {
+.game__card-front {
   border: 2px solid black;
   z-index: 2;
   -webkit-transform: rotateY(180deg);
@@ -493,13 +476,12 @@ body {
   border-radius: 5px;
 }
 
-.cards__back {
+.game__card-back {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
 }
 
-.card__back,
-.card__front {
+.game__card-img, .game__card-cardback {
   cursor: pointer;
   visibility: inherit;
   width: 10vw;
@@ -513,6 +495,22 @@ body {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+
+.audio__button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 5;
+  right: 15px;
+  top: 15px;
+  background-image: url("https://api.iconify.design/uil:volume-mute.svg?color=rgba(2%2C2%2C2%2C0.615)");
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+
+.pause {
+  background-image: url("https://api.iconify.design/uil:volume.svg?color=rgba(2%2C2%2C2%2C0.615)");
 }
 
 .hide {
