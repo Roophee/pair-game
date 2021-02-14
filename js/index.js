@@ -135,34 +135,38 @@ const checkGameIsOverOrNot = function () {
 }
 
 // ADD HIDE CLASS ON CARD-HOLDER ITEM IF TWO CARD ARE PAIR
-let hidePair = function(){
-    if (prePair[0] && prePair[1]){
-    prePair[0][1].classList.add('hide');
-    prePair[1][1].classList.add('hide');
-    prePair.splice(0, 2);
+let hidePair = function(currentPair){
+    if (currentPair[0] && currentPair[1]){
+        currentPair[0][1].classList.add('hide');
+        currentPair[1][1].classList.add('hide');
+        currentPair.splice(0, 2);
     }
 }
 
 // REMOVE ACTIVE CLASS FROM CARD-HOLDER ITEM IF TWO CARD ARE NOT A PAIR
-let clearPair = function() {
-    prePair[0][1].classList.remove('active');
-    prePair[1][1].classList.remove('active');
-    prePair.splice(0, 2);
+let clearPair = function(currentPair) {
+    currentPair[0][1].classList.remove('active');
+    currentPair[1][1].classList.remove('active');
+    currentPair.splice(0, 2);
 }
 
 // CHECK IS TWO CARDS A PAIR OR NOT
 let checkPairOrNot = function () {
     if (prePair.length === 2 && prePair[0][0] === prePair[1][0]) {
+        let currentPair = prePair.slice();
+        prePair.splice(0, 2);
         pairs.push('1');
-        setTimeout(function () {
-            hidePair();
-        }, 500);
+        setTimeout(function (currentPair) {
+            hidePair(currentPair);
+        }, 500, currentPair);
         checkGameIsOverOrNot();
 
     } else if (prePair.length === 2 && prePair[0][0] !== prePair[1][0]) {
-        setTimeout(function () {
-            clearPair();
-        }, 800);
+        let currentPair = prePair.slice();
+        prePair.splice(0, 2);
+        setTimeout(function (currentPair) {
+            clearPair(currentPair);
+        }, 800, currentPair);
 }}
 
 // GET PICTURE NAME FROM ALT AND PARENT ELEMENT
